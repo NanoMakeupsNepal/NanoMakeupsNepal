@@ -1,4 +1,4 @@
-## Hi there 👋
+## Official Website of NanoMakeups Nepal
 
 <!--
 **NanoMakeupsNepal/NanoMakeupsNepal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
