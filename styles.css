@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
 
 * {
   box-sizing: border-box; /* to avoid width problems if padding */
