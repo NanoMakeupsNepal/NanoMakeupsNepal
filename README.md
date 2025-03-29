@@ -1,5 +1,5 @@
 ## Official Website of NanoMakeups Nepal
-
+## Deployed live at: https://nanomakeupsnepal.github.io/NanoMakeupsNepal
 <!--
 **NanoMakeupsNepal/NanoMakeupsNepal** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
