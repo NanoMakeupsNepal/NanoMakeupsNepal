@@ -1,85 +1,93 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #fff5f8;
+    color: #333;
 }
 
 header {
-    background-color: #ffcccb;
-    color: #333;
-    padding: 2em 0;
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    color: white;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
+    font-size: 2.5rem;
     margin: 0;
-    font-size: 2.5em;
-    font-weight: bold;
 }
 
-header h2 {
-    margin: 0.5em 0 0;
-    font-size: 1.2em;
-    font-weight: normal;
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 300;
 }
 
 .slideshow-container {
     max-width: 80%;
     position: relative;
-    margin: 40px auto;
+    margin: 30px auto;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .mySlides {
     display: none;
+    text-align: center;
 }
 
 .mySlides img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+.dots-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active {
+    background-color: #ff4081;
+}
+
+.shop-now-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shop-now-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes fade {
     from { opacity: .4 } 
     to { opacity: 1 }
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: #717171;
-}
-
-.shop-now-button {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 18px;
-    color: white;
-    background-color: #ff4081;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.shop-now-button:hover {
-    background-color: #ff1c5c;
-    transform: scale(1.05);
 }
