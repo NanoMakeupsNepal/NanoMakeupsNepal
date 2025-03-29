@@ -2,36 +2,40 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff5f8;
+    background: linear-gradient(to right, #fff0f5, #ffe4e1);
     color: #333;
+    text-align: center;
 }
 
 header {
-    background: linear-gradient(135deg, #ff4081, #ff80ab);
+    background: linear-gradient(135deg, #ff0066, #ff80ab);
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #ff4081;
+    border-radius: 0 0 20px 20px;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
+    font-weight: 700;
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 0.5rem;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .slideshow-container {
     max-width: 80%;
     position: relative;
-    margin: 30px auto;
+    margin: 40px auto;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .mySlides {
@@ -42,19 +46,21 @@ header h1 {
 .mySlides img {
     width: 100%;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
+    border: 4px solid #ff80ab;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .dots-container {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
-    margin: 0 4px;
-    background-color: #bbb;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #ddd;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.3s ease;
@@ -62,29 +68,31 @@ header h1 {
 
 .active {
     background-color: #ff4081;
+    transform: scale(1.2);
 }
 
 .shop-now-container {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .shop-now-button {
     display: inline-block;
-    padding: 15px 35px;
-    font-size: 20px;
-    font-weight: 600;
+    padding: 18px 40px;
+    font-size: 22px;
+    font-weight: 700;
     color: white;
     background: linear-gradient(135deg, #ff4081, #ff80ab);
     text-decoration: none;
-    border-radius: 30px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 .shop-now-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes fade {
