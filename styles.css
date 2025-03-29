@@ -1,64 +1,78 @@
-<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  box-sizing: border-box; /* to avoid width problems if padding */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-family: "Muli", sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden; /* to hide scrollbars */
-  margin: 0;
+  background-color: black;
+  overflow: hidden;
 }
 
-.container {
-  display: flex;
-  width: 90vw;
-}
-
-.panel {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
+.image-container {
   position: relative;
-  transition: flex 0.7s ease-in;
-  -webkit-transition: all 700ms ease-in;
+  width: 200px;
+  min-height: 200px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: all 1s ease-in-out;
 }
 
-.panel h3 {
-  font-size: 24px;
+.image-container span {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
-  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
 }
 
-.panel.active {
-  flex: 5;
+.image-container span img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.panel.active h3 {
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+.buttons {
+  position: relative;
+  width: 80%;
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
+.btn {
+  position: absolute;
+  bottom: -80px;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  .panel:nth-of-type(4),
-  .panel:nth-of-type(5) {
-    display: none;
-  }
+.btn:hover {
+  filter: brightness(1.5);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.prev {
+  left: 20%;
+}
+
+.next {
+  right: 20%;
 }
